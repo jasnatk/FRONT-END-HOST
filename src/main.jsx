@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Homepage from "./pages/HomePage"
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
-import ProductDetails from './pages/Productdetails'
+import ProductDetails from './pages/ProductDetails'
 
 const router = createBrowserRouter([
   {
