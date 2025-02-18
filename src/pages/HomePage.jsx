@@ -6,7 +6,7 @@ import ColorSchemesExample from "../components/navbar"
 import { Row } from "react-bootstrap"
 import { Col } from "react-bootstrap"
 import { Container } from "react-bootstrap"
-import Product from "./product"
+import Product from "./Product"
 
 function Homepage() {
     const [products, setProducts] = useState([]);
