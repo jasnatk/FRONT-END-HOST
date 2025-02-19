@@ -1,5 +1,6 @@
 import { Card } from "react-bootstrap"
 import Button from "react-bootstrap/Button"
+import { Link } from "react-router-dom";
 
 export function Product(props) {
 
@@ -10,10 +11,10 @@ export function Product(props) {
             <Card.Body>
                 <Card.Title>{props.title} </Card.Title>
                 <Card.Text>${props.price}</Card.Text>
-                <a href={"/product-details/" + props.id}>
+                <Link to ={`/product-details/${props.id}`}>
                     <Button variant="primary" >View Details</Button>
-                </a>
-                <Button variant="warning">Add to cart</Button>
+                </Link>
+                <Button variant="warning">Add to Cart</Button>
             </Card.Body>
         </Card>
     );
